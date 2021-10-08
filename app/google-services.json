@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801200620297",
+    "project_id": "zadacha-2a61f",
+    "storage_bucket": "zadacha-2a61f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801200620297:android:4ff13ee38ee48b3e1e49d8",
+        "android_client_info": {
+          "package_name": "com.example.zadacha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801200620297-n0dghf29m0easbt3o0fc3970g4mbq94h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQUzHePbY7negOK9hxisSNoJmG3AGWu0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801200620297-n0dghf29m0easbt3o0fc3970g4mbq94h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
