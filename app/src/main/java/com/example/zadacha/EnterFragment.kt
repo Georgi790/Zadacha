@@ -18,7 +18,7 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_enter.*
 import kotlinx.android.synthetic.main.fragment_register.*
 
-class enterFragment : Fragment(R.layout.fragment_enter) {
+class EnterFragment : Fragment(R.layout.fragment_enter) {
     private lateinit var auth: FirebaseAuth;
 
     private var _binding: FragmentEnterBinding? = null
@@ -35,35 +35,35 @@ class enterFragment : Fragment(R.layout.fragment_enter) {
 
     }
 
-
     public override fun onStart() {
         super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null) {
             updateUI(currentUser)
         }
-
-    }
-    private fun updateUI(user: FirebaseUser?) {
     }
 
-      override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-          auth = Firebase.auth
+        auth = Firebase.auth
         binding.LoginButton.setOnClickListener {
-
-            if (binding.mailInput.text.toString().isNotEmpty() && binding.passwordInput.text.toString().isNotEmpty())
-                    {
+            if (binding.mailInput.text.toString().isNotEmpty() &&
+                binding.passwordInput.text.toString().isNotEmpty()
+            ) {
                 val email = binding.mailInput.text.toString()
                 val password = binding.passwordInput.text.toString()
 
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
-                        if (task.isSuccessful){
-                           if(auth.currentUser!=null)
-                            findNavController().navigate(R.id.action_enterFragment_to_voteFragment)
+                        if (task.isSuccessful) {
+                            if (auth.currentUser != null)
+                                findNavController().navigate(R.id.action_enterFragment_to_voteFragment)
                         } else {
-                            Toast.makeText(view.context, "Login faild, try again or make a registration", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                view.context,
+                                "Login faild, try again or make a registration",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
 
                     }
@@ -75,12 +75,16 @@ class enterFragment : Fragment(R.layout.fragment_enter) {
             findNavController().navigate(R.id.action_enterFragment_to_registerFragment)
         }
     }
+
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
     }
 
+    private fun updateUI(user: FirebaseUser?) {
     }
+
+}
 
 
 

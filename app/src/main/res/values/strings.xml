@@ -7,4 +7,14 @@
     <string name="enter_age">Enter Age</string>
     <string name="register_here">Register here</string>
     <string name="enter_email">Enter Email</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="vote">Vote</string>
+    <string name="dj_tiesto">DJ TIESTO</string>
+    <string name="btr">BTR</string>
+    <string name="queen">QUEEN</string>
+    <string name="abba">ABBA</string>
+    <string name="choise_song">choise song</string>
+    <string name="song" />
+    <string name="rb">rb</string>
+    <string name="vote_for_the_next_song">Vote for the next song</string>
 </resources>

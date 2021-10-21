@@ -5,42 +5,77 @@
     android:id="@+id/voteFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_700"
-    >
+    android:background="@color/white">
+
 
     <TextView
         android:id="@+id/vote_songs"
-        android:layout_width="284dp"
-        android:layout_height="52dp"
-        android:text="Vote for the next song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:backgroundTint="@color/cardview_light_background"
+        android:text="@string/vote_for_the_next_song"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radio_Group"
+        app:layout_constraintEnd_toEndOf="@+id/radio_Group"
+        app:layout_constraintStart_toStartOf="@+id/radio_Group"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <RadioGroup
+        android:id="@+id/radio_Group"
+        android:layout_width="208dp"
+        android:layout_height="193dp"
+        android:orientation="vertical"
+        android:text="@string/radiobutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_editor_absoluteX="50dp"
+        app:layout_editor_absoluteY="170dp">
 
-    <RadioButton
-        android:id="@+id/radio_Button"
-        android:layout_width="126dp"
-        android:layout_height="82dp"
-        android:text="RadioButton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/vote_songs"
-        app:layout_constraintStart_toStartOf="@+id/vote_songs"
-        app:layout_constraintTop_toBottomOf="@+id/vote_songs"
-        app:layout_constraintVertical_bias="0.243" />
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RadioGroup>
+
 
     <Button
-        android:id="@+id/vote_Button"
-        android:layout_width="128dp"
-        android:layout_height="76dp"
-        android:text="Vote"
+        android:id="@+id/button_vote"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="76dp"
+        android:background="@color/teal_200"
+        android:text="@string/vote"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/radio_Button"
-        app:layout_constraintStart_toStartOf="@+id/radio_Button"
-        app:layout_constraintTop_toBottomOf="@+id/radio_Button"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_Group" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

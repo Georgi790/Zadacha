@@ -12,23 +12,21 @@
         android:id="@+id/enter_mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="@string/enter_email"
         android:inputType="textEmailAddress"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/enter_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="@string/enter_password"
         android:inputType="textPassword"
@@ -36,50 +34,49 @@
         app:layout_constraintEnd_toEndOf="@+id/enter_mail"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_mail"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_mail" />
 
     <EditText
         android:id="@+id/repeat_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/repeat_password"
         android:inputType="textPassword"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/enter_password"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_password"
-        app:layout_constraintVertical_bias="0.085"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_password" />
 
     <EditText
         android:id="@+id/enter_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="292dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/enter_age"
+        android:inputType="textPersonName"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repeat_password"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.973" />
 
     <Button
         android:id="@+id/register_Button"
-        android:layout_width="221dp"
-        android:layout_height="52dp"
+        android:layout_width="251dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="168dp"
         android:text="@string/register_here"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter_age" />
+        app:layout_constraintTop_toBottomOf="@+id/enter_age"
+        app:layout_constraintVertical_bias="0.851" />
 </androidx.constraintlayout.widget.ConstraintLayout>
